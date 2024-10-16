@@ -65,7 +65,7 @@ hi! link debugPC SignColumn
 hi! link lCursor Cursor
 
 if (has('termguicolors') && &termguicolors) || has('gui_running')
-  let g:terminal_ansi_colors = ['#141615', '#fda596', '#749c3b', '#a98f27', '#886ee7', '#d280be', '#7eaadc', '#b2b9a9', '#425049', '#ffc6bc', '#e8ffc9', '#ffefaf', '#b5bbff', '#ebb1dc', '#afdff0', '#dadfd3']
+  let g:terminal_ansi_colors = ['#141615', '#fda596', '#749c3b', '#a98f27', '#5a73a7', '#d280be', '#7eaadc', '#b2b9a9', '#425049', '#ffc6bc', '#e8ffc9', '#ffefaf', '#b5bbff', '#ebb1dc', '#afdff0', '#dadfd3']
 endif
 if get(g:, 'dark_transp_bg', 0) && !has('gui_running')
   hi Normal guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
@@ -104,7 +104,7 @@ hi Search guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi SignColumn guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi SpecialKey guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi SpellBad guifg=#b2b9a9 guibg=#141615 guisp=#fda596 gui=NONE cterm=NONE
-hi SpellCap guifg=#b2b9a9 guibg=#141615 guisp=#886ee7 gui=NONE cterm=NONE
+hi SpellCap guifg=#b2b9a9 guibg=#141615 guisp=#5a73a7 gui=NONE cterm=NONE
 hi SpellLocal guifg=#b2b9a9 guibg=#141615 guisp=#d280be gui=NONE cterm=NONE
 hi SpellRare guifg=#b2b9a9 guibg=#141615 guisp=#7eaadc gui=reverse cterm=reverse
 hi StatusLine guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
@@ -130,7 +130,7 @@ hi Keyword guifg=#82aa9e guibg=NONE gui=NONE cterm=NONE
 hi Conditional guifg=#82aa9e guibg=NONE gui=NONE cterm=NONE
 hi Todo guifg=#141615 guibg=#fda596 gui=NONE cterm=NONE
 hi Type guifg=#62cbb6 guibg=NONE gui=NONE cterm=NONE
-hi Underlined guifg=#886ee7 guibg=NONE gui=underline cterm=underline
+hi Underlined guifg=#5a73a7 guibg=NONE gui=underline cterm=underline
 hi String guifg=#afdff0 guibg=NONE gui=NONE cterm=NONE
 hi Character guifg=#ffc6bc guibg=NONE gui=NONE cterm=NONE
 hi Boolean guifg=#ebb1dc guibg=NONE gui=NONE cterm=NONE
@@ -213,7 +213,7 @@ if s:t_Co >= 256
   hi Conditional ctermfg=109 ctermbg=NONE cterm=NONE
   hi Todo ctermfg=233 ctermbg=217 cterm=NONE
   hi Type ctermfg=79 ctermbg=NONE cterm=NONE
-  hi Underlined ctermfg=98 ctermbg=NONE cterm=underline
+  hi Underlined ctermfg=60 ctermbg=NONE cterm=underline
   hi String ctermfg=152 ctermbg=NONE cterm=NONE
   hi Character ctermfg=224 ctermbg=NONE cterm=NONE
   hi Boolean ctermfg=182 ctermbg=NONE cterm=NONE
@@ -410,7 +410,7 @@ endif
 " Color: red           #FDA596                   ~         DarkRed
 " Color: green         #749C3B                   ~         DarkGreen
 " Color: yellow        #A98F27                   ~         DarkYellow
-" Color: blue          #886EE7                   ~         DarkBlue
+" Color: blue          #5A73A7                   ~         DarkBlue
 " Color: magenta       #D280BE                   ~         DarkMagenta
 " Color: cyan          #7EAADC                   ~         DarkCyan
 " Color: white         #B2B9A9                   ~         LightGrey
