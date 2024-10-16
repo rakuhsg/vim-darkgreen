@@ -89,9 +89,10 @@ Color: brightmagenta #EBB1DC                   ~         LightMagenta
 Color: brightcyan    #AFDFF0                   ~         LightCyan
 Color: brightwhite   #DADFD3                  231        White
 Color: accentdark    #52746A                   ~         DarkGreen
+Color: accentlight   #82AA9E                   ~         Green
 Color: accentbg      #182F28                   ~         Black
 Color: accentborder  #2B463E                   ~         DarkGreen
-Color: accentlight   #52746A                   ~         Green
+Color: aqua          #62CBB6                   ~         Green
 ; }}}
 ; Terminal colors {{{
 Term colors: black red green yellow blue magenta cyan white
@@ -134,10 +135,10 @@ MatchParen           white             black
 ModeMsg              white             black
 MoreMsg              white             black
 NonText              white             black
-Pmenu                white             accentdark
+Pmenu                white             accentbg
 PmenuSbar            white             accentborder
-PmenuSel             brightgreen       accentlight       reverse
-PmenuThumb           white             brightgreen
+PmenuSel             brightgreen       accentdark
+PmenuThumb           white             accentlight
 Question             white             black
 Search               white             black
 SignColumn           white             black
@@ -153,22 +154,33 @@ TabLineFill          white             black
 TabLineSel           white             black
 Title                white             black
 VertSplit            white             black
-Visual               white             black
+Visual               brightgreen       accentdark
 VisualNOS            white             black
 WarningMsg           white             black
 WildMenu             white             black
 ; Other conventional group names (see `:help group-name`)
-Comment              white             none              italic
-Constant             white             none
-Error                white             black             reverse
+Comment              brightblack       none              italic
+Constant             aqua              none
+Error                red               black             italic
 Identifier           white             none
 Ignore               white             none
 PreProc              white             none
 Special              white             none
-Statement            white             none
-Todo                 white             none
-Type                 white             none
-Underlined           white             none
+Statement            accentlight       none
+Keyword              accentlight       none
+Conditional          accentlight       none
+Todo                 black             red
+Type                 aqua              none
+Underlined           blue              none              underline
+String               brightcyan        none
+Character            brightred         none
+Boolean              brightmagenta     none
+Number               brightmagenta     none
+Float                brightcyan        none
+Macro                yellow            none
+Added                black             green
+Changed              black             yellow
+Removed              black             red
 ; See `:help CursorIM`
 CursorIM             none              fg
 ; See `:help window-toolbar`

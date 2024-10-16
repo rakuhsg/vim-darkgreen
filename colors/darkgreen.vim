@@ -95,10 +95,10 @@ hi MatchParen guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi ModeMsg guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi MoreMsg guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi NonText guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
-hi Pmenu guifg=#b2b9a9 guibg=#52746a gui=NONE cterm=NONE
+hi Pmenu guifg=#b2b9a9 guibg=#182f28 gui=NONE cterm=NONE
 hi PmenuSbar guifg=#b2b9a9 guibg=#2b463e gui=NONE cterm=NONE
-hi PmenuSel guifg=#e8ffc9 guibg=#52746a gui=reverse cterm=reverse
-hi PmenuThumb guifg=#b2b9a9 guibg=#e8ffc9 gui=NONE cterm=NONE
+hi PmenuSel guifg=#e8ffc9 guibg=#52746a gui=NONE cterm=NONE
+hi PmenuThumb guifg=#b2b9a9 guibg=#82aa9e gui=NONE cterm=NONE
 hi Question guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi Search guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi SignColumn guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
@@ -114,27 +114,39 @@ hi TabLineFill guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi TabLineSel guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi Title guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi VertSplit guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
-hi Visual guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
+hi Visual guifg=#e8ffc9 guibg=#52746a gui=NONE cterm=NONE
 hi VisualNOS guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi WarningMsg guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
 hi WildMenu guifg=#b2b9a9 guibg=#141615 gui=NONE cterm=NONE
-hi Comment guifg=#b2b9a9 guibg=NONE gui=italic cterm=italic
-hi Constant guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
-hi Error guifg=#b2b9a9 guibg=#141615 gui=reverse cterm=reverse
+hi Comment guifg=#425049 guibg=NONE gui=italic cterm=italic
+hi Constant guifg=#62cbb6 guibg=NONE gui=NONE cterm=NONE
+hi Error guifg=#fda596 guibg=#141615 gui=italic cterm=italic
 hi Identifier guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
 hi Ignore guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
 hi PreProc guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
 hi Special guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
-hi Statement guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
-hi Todo guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
-hi Type guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
-hi Underlined guifg=#b2b9a9 guibg=NONE gui=NONE cterm=NONE
+hi Statement guifg=#82aa9e guibg=NONE gui=NONE cterm=NONE
+hi Keyword guifg=#82aa9e guibg=NONE gui=NONE cterm=NONE
+hi Conditional guifg=#82aa9e guibg=NONE gui=NONE cterm=NONE
+hi Todo guifg=#141615 guibg=#fda596 gui=NONE cterm=NONE
+hi Type guifg=#62cbb6 guibg=NONE gui=NONE cterm=NONE
+hi Underlined guifg=#886ee7 guibg=NONE gui=underline cterm=underline
+hi String guifg=#afdff0 guibg=NONE gui=NONE cterm=NONE
+hi Character guifg=#ffc6bc guibg=NONE gui=NONE cterm=NONE
+hi Boolean guifg=#ebb1dc guibg=NONE gui=NONE cterm=NONE
+hi Number guifg=#ebb1dc guibg=NONE gui=NONE cterm=NONE
+hi Float guifg=#afdff0 guibg=NONE gui=NONE cterm=NONE
+hi Macro guifg=#a98f27 guibg=NONE gui=NONE cterm=NONE
+hi Added guifg=#141615 guibg=#749c3b gui=NONE cterm=NONE
+hi Changed guifg=#141615 guibg=#a98f27 gui=NONE cterm=NONE
+hi Removed guifg=#141615 guibg=#fda596 gui=NONE cterm=NONE
 hi CursorIM guifg=NONE guibg=fg gui=NONE cterm=NONE
 hi ToolbarLine guifg=NONE guibg=#141615 gui=NONE cterm=NONE
 hi ToolbarButton guifg=#b2b9a9 guibg=#141615 gui=bold cterm=bold
 if !s:italics
   hi Folded gui=NONE cterm=NONE
   hi Comment gui=NONE cterm=NONE
+  hi Error gui=NONE cterm=NONE
 endif
 
 if s:t_Co >= 256
@@ -166,10 +178,10 @@ if s:t_Co >= 256
   hi ModeMsg ctermfg=144 ctermbg=233 cterm=NONE
   hi MoreMsg ctermfg=144 ctermbg=233 cterm=NONE
   hi NonText ctermfg=144 ctermbg=233 cterm=NONE
-  hi Pmenu ctermfg=144 ctermbg=66 cterm=NONE
+  hi Pmenu ctermfg=144 ctermbg=235 cterm=NONE
   hi PmenuSbar ctermfg=144 ctermbg=23 cterm=NONE
-  hi PmenuSel ctermfg=193 ctermbg=66 cterm=reverse
-  hi PmenuThumb ctermfg=144 ctermbg=193 cterm=NONE
+  hi PmenuSel ctermfg=193 ctermbg=66 cterm=NONE
+  hi PmenuThumb ctermfg=144 ctermbg=109 cterm=NONE
   hi Question ctermfg=144 ctermbg=233 cterm=NONE
   hi Search ctermfg=144 ctermbg=233 cterm=NONE
   hi SignColumn ctermfg=144 ctermbg=233 cterm=NONE
@@ -185,27 +197,39 @@ if s:t_Co >= 256
   hi TabLineSel ctermfg=144 ctermbg=233 cterm=NONE
   hi Title ctermfg=144 ctermbg=233 cterm=NONE
   hi VertSplit ctermfg=144 ctermbg=233 cterm=NONE
-  hi Visual ctermfg=144 ctermbg=233 cterm=NONE
+  hi Visual ctermfg=193 ctermbg=66 cterm=NONE
   hi VisualNOS ctermfg=144 ctermbg=233 cterm=NONE
   hi WarningMsg ctermfg=144 ctermbg=233 cterm=NONE
   hi WildMenu ctermfg=144 ctermbg=233 cterm=NONE
-  hi Comment ctermfg=144 ctermbg=NONE cterm=italic
-  hi Constant ctermfg=144 ctermbg=NONE cterm=NONE
-  hi Error ctermfg=144 ctermbg=233 cterm=reverse
+  hi Comment ctermfg=239 ctermbg=NONE cterm=italic
+  hi Constant ctermfg=79 ctermbg=NONE cterm=NONE
+  hi Error ctermfg=217 ctermbg=233 cterm=italic
   hi Identifier ctermfg=144 ctermbg=NONE cterm=NONE
   hi Ignore ctermfg=144 ctermbg=NONE cterm=NONE
   hi PreProc ctermfg=144 ctermbg=NONE cterm=NONE
   hi Special ctermfg=144 ctermbg=NONE cterm=NONE
-  hi Statement ctermfg=144 ctermbg=NONE cterm=NONE
-  hi Todo ctermfg=144 ctermbg=NONE cterm=NONE
-  hi Type ctermfg=144 ctermbg=NONE cterm=NONE
-  hi Underlined ctermfg=144 ctermbg=NONE cterm=NONE
+  hi Statement ctermfg=109 ctermbg=NONE cterm=NONE
+  hi Keyword ctermfg=109 ctermbg=NONE cterm=NONE
+  hi Conditional ctermfg=109 ctermbg=NONE cterm=NONE
+  hi Todo ctermfg=233 ctermbg=217 cterm=NONE
+  hi Type ctermfg=79 ctermbg=NONE cterm=NONE
+  hi Underlined ctermfg=98 ctermbg=NONE cterm=underline
+  hi String ctermfg=152 ctermbg=NONE cterm=NONE
+  hi Character ctermfg=224 ctermbg=NONE cterm=NONE
+  hi Boolean ctermfg=182 ctermbg=NONE cterm=NONE
+  hi Number ctermfg=182 ctermbg=NONE cterm=NONE
+  hi Float ctermfg=152 ctermbg=NONE cterm=NONE
+  hi Macro ctermfg=136 ctermbg=NONE cterm=NONE
+  hi Added ctermfg=233 ctermbg=107 cterm=NONE
+  hi Changed ctermfg=233 ctermbg=136 cterm=NONE
+  hi Removed ctermfg=233 ctermbg=217 cterm=NONE
   hi CursorIM ctermfg=NONE ctermbg=fg cterm=NONE
   hi ToolbarLine ctermfg=NONE ctermbg=233 cterm=NONE
   hi ToolbarButton ctermfg=144 ctermbg=233 cterm=bold
   if !s:italics
     hi Folded cterm=NONE
     hi Comment cterm=NONE
+    hi Error cterm=NONE
   endif
   unlet s:t_Co s:italics
   finish
@@ -240,10 +264,10 @@ if s:t_Co >= 8
   hi ModeMsg ctermfg=LightGrey ctermbg=Black cterm=NONE
   hi MoreMsg ctermfg=LightGrey ctermbg=Black cterm=NONE
   hi NonText ctermfg=LightGrey ctermbg=Black cterm=NONE
-  hi Pmenu ctermfg=LightGrey ctermbg=DarkGreen cterm=NONE
+  hi Pmenu ctermfg=LightGrey ctermbg=Black cterm=NONE
   hi PmenuSbar ctermfg=LightGrey ctermbg=DarkGreen cterm=NONE
-  hi PmenuSel ctermfg=LightGreen ctermbg=Green cterm=reverse
-  hi PmenuThumb ctermfg=LightGrey ctermbg=LightGreen cterm=NONE
+  hi PmenuSel ctermfg=LightGreen ctermbg=DarkGreen cterm=NONE
+  hi PmenuThumb ctermfg=LightGrey ctermbg=Green cterm=NONE
   hi Question ctermfg=LightGrey ctermbg=Black cterm=NONE
   hi Search ctermfg=LightGrey ctermbg=Black cterm=NONE
   hi SignColumn ctermfg=LightGrey ctermbg=Black cterm=NONE
@@ -259,27 +283,39 @@ if s:t_Co >= 8
   hi TabLineSel ctermfg=LightGrey ctermbg=Black cterm=NONE
   hi Title ctermfg=LightGrey ctermbg=Black cterm=NONE
   hi VertSplit ctermfg=LightGrey ctermbg=Black cterm=NONE
-  hi Visual ctermfg=LightGrey ctermbg=Black cterm=NONE
+  hi Visual ctermfg=LightGreen ctermbg=DarkGreen cterm=NONE
   hi VisualNOS ctermfg=LightGrey ctermbg=Black cterm=NONE
   hi WarningMsg ctermfg=LightGrey ctermbg=Black cterm=NONE
   hi WildMenu ctermfg=LightGrey ctermbg=Black cterm=NONE
-  hi Comment ctermfg=LightGrey ctermbg=NONE cterm=italic
-  hi Constant ctermfg=LightGrey ctermbg=NONE cterm=NONE
-  hi Error ctermfg=LightGrey ctermbg=Black cterm=reverse
+  hi Comment ctermfg=DarkGrey ctermbg=NONE cterm=italic
+  hi Constant ctermfg=Green ctermbg=NONE cterm=NONE
+  hi Error ctermfg=DarkRed ctermbg=Black cterm=italic
   hi Identifier ctermfg=LightGrey ctermbg=NONE cterm=NONE
   hi Ignore ctermfg=LightGrey ctermbg=NONE cterm=NONE
   hi PreProc ctermfg=LightGrey ctermbg=NONE cterm=NONE
   hi Special ctermfg=LightGrey ctermbg=NONE cterm=NONE
-  hi Statement ctermfg=LightGrey ctermbg=NONE cterm=NONE
-  hi Todo ctermfg=LightGrey ctermbg=NONE cterm=NONE
-  hi Type ctermfg=LightGrey ctermbg=NONE cterm=NONE
-  hi Underlined ctermfg=LightGrey ctermbg=NONE cterm=NONE
+  hi Statement ctermfg=Green ctermbg=NONE cterm=NONE
+  hi Keyword ctermfg=Green ctermbg=NONE cterm=NONE
+  hi Conditional ctermfg=Green ctermbg=NONE cterm=NONE
+  hi Todo ctermfg=Black ctermbg=DarkRed cterm=NONE
+  hi Type ctermfg=Green ctermbg=NONE cterm=NONE
+  hi Underlined ctermfg=DarkBlue ctermbg=NONE cterm=underline
+  hi String ctermfg=LightCyan ctermbg=NONE cterm=NONE
+  hi Character ctermfg=LightRed ctermbg=NONE cterm=NONE
+  hi Boolean ctermfg=LightMagenta ctermbg=NONE cterm=NONE
+  hi Number ctermfg=LightMagenta ctermbg=NONE cterm=NONE
+  hi Float ctermfg=LightCyan ctermbg=NONE cterm=NONE
+  hi Macro ctermfg=DarkYellow ctermbg=NONE cterm=NONE
+  hi Added ctermfg=Black ctermbg=DarkGreen cterm=NONE
+  hi Changed ctermfg=Black ctermbg=DarkYellow cterm=NONE
+  hi Removed ctermfg=Black ctermbg=DarkRed cterm=NONE
   hi CursorIM ctermfg=NONE ctermbg=fg cterm=NONE
   hi ToolbarLine ctermfg=NONE ctermbg=Black cterm=NONE
   hi ToolbarButton ctermfg=LightGrey ctermbg=Black cterm=bold
   if !s:italics
     hi Folded cterm=NONE
     hi Comment cterm=NONE
+    hi Error cterm=NONE
   endif
   unlet s:t_Co s:italics
   finish
@@ -387,9 +423,10 @@ endif
 " Color: brightcyan    #AFDFF0                   ~         LightCyan
 " Color: brightwhite   #DADFD3                  231        White
 " Color: accentdark    #52746A                   ~         DarkGreen
+" Color: accentlight   #82AA9E                   ~         Green
 " Color: accentbg      #182F28                   ~         Black
 " Color: accentborder  #2B463E                   ~         DarkGreen
-" Color: accentlight   #52746A                   ~         Green
+" Color: aqua          #62CBB6                   ~         Green
 " Term colors: black red green yellow blue magenta cyan white
 " Term colors: brightblack brightred brightgreen brightyellow
 " Term colors: brightblue brightmagenta brightcyan brightwhite
